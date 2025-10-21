@@ -1,0 +1,118 @@
+.about {
+  background-color: var(--color-gray-light);
+}
+
+.section-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--color-accent) 0%, #c42b26 100%);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(222, 50, 45, 0.15);
+  transition: transform var(--transition-normal);
+}
+
+.about-image-placeholder:hover {
+  transform: scale(1.02);
+}
+
+.image-icon {
+  font-size: 8rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+}
+
+.skills-section {
+  margin-top: var(--spacing-md);
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: var(--spacing-sm);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(222, 50, 45, 0.2);
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .about-image-placeholder {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .image-icon {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-paragraph {
+    font-size: 1rem;
+  }
+
+  .image-icon {
+    font-size: 4rem;
+  }
+}
+
