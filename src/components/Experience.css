@@ -1,5 +1,5 @@
 .experience {
-  background-color: var(--color-white);
+  background-color: var(--color-bg-elevated);
 }
 
 .timeline {
@@ -35,7 +35,7 @@
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-elevated);
   border: 3px solid var(--color-accent);
   border-radius: 50%;
   display: flex;
@@ -50,7 +50,7 @@
 }
 
 .timeline-content {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-bg-secondary);
   padding: var(--spacing-md);
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -78,7 +78,7 @@
 .company-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-text);
   margin-bottom: var(--spacing-xs);
 }
 
@@ -92,7 +92,7 @@
 .period {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-gray-medium);
+  color: var(--color-text-muted);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -108,7 +108,7 @@
   margin-bottom: var(--spacing-xs);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--color-gray-dark);
+  color: var(--color-text-secondary);
 }
 
 .description-list li::before {

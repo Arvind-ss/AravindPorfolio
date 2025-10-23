@@ -1,5 +1,5 @@
 .projects {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-bg-secondary);
 }
 
 .projects-grid {
@@ -11,7 +11,7 @@
 }
 
 .project-card {
-  background-color: var(--color-white);
+  background-color: var(--color-bg-elevated);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
@@ -70,8 +70,8 @@
 
 .project-link {
   padding: 0.75rem 1.5rem;
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background-color: var(--color-bg-elevated);
+  color: var(--color-text);
   border-radius: 25px;
   font-weight: 500;
   transition: all var(--transition-fast);
@@ -79,7 +79,7 @@
 
 .project-link:hover {
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
@@ -90,14 +90,14 @@
 .project-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-text);
   margin-bottom: var(--spacing-xs);
 }
 
 .project-description {
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--color-gray-dark);
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -109,8 +109,8 @@
 
 .tech-tag {
   padding: 0.4rem 0.8rem;
-  background-color: var(--color-gray-light);
-  color: var(--color-black);
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
   border-radius: 15px;
   font-size: 0.85rem;
   font-weight: 500;

@@ -1,5 +1,5 @@
 .testimonials {
-  background-color: var(--color-gray-light);
+  background-color: var(--color-bg-secondary);
 }
 
 .testimonials-grid {
@@ -11,7 +11,7 @@
 }
 
 .testimonial-card {
-  background-color: var(--color-white);
+  background-color: var(--color-bg-elevated);
   padding: var(--spacing-lg);
   border-radius: var(--radius-lg);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
@@ -37,7 +37,7 @@
 .testimonial-quote {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--color-gray-dark);
+  color: var(--color-text-secondary);
   margin-bottom: var(--spacing-md);
   font-style: italic;
 }
@@ -69,7 +69,7 @@
 .author-name {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-black);
+  color: var(--color-text);
   margin-bottom: 0.25rem;
 }
 
@@ -82,7 +82,7 @@
 
 .author-company {
   font-size: 0.9rem;
-  color: var(--color-gray-medium);
+  color: var(--color-text-muted);
 }
 
 @media (max-width: 768px) {

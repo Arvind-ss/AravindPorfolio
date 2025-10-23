@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import 'lenis/dist/lenis.css';
 
 @tailwind base;
 @tailwind components;
@@ -6,14 +7,6 @@
 
 @layer base {
   :root {
-  /* Color Palette */
-  --color-accent: #DE322D;
-  --color-black: #0C0C0C;
-  --color-white: #FFFFFF;
-  --color-gray-light: #F5F5F7;
-  --color-gray-medium: #86868B;
-  --color-gray-dark: #1D1D1F;
-  
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -37,6 +30,35 @@
   --transition-slow: 0.6s ease;
 }
 
+/* Light Theme (Default) */
+:root,
+:root.light {
+  /* Color Palette - Light Mode with softer backgrounds */
+  --color-accent: #DE322D;
+  --color-accent-hover: #c42b26;
+  --color-bg: linear-gradient(135deg, #FFF9E6 0%, #FFEFC1 25%, #FFF9E6 50%, #FFE8B8 75%, #FFF9E6 100%);
+  --color-bg-secondary: #fcf5f5;
+  --color-bg-elevated: #fcf5f5;
+  --color-text: #0C0C0C;
+  --color-text-secondary: #1D1D1F;
+  --color-text-muted: #86868B;
+  --color-border: #E5E5E7;
+}
+
+/* Dark Theme */
+:root.dark {
+  /* Color Palette - Dark Mode */
+  --color-accent: #FF4940;
+  --color-accent-hover: #FF5F57;
+  --color-bg: linear-gradient(135deg, #0F172A 0%, #1A1A2E 25%, #0F172A 50%, #16213E 75%, #0F172A 100%);
+  --color-bg-secondary: #1D1D1F;
+  --color-bg-elevated: #2C2C2E;
+  --color-text: #F5F5F7;
+  --color-text-secondary: #E5E5E7;
+  --color-text-muted: #98989D;
+  --color-border: #38383A;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,19 +66,20 @@
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   margin: 0;
   font-family: var(--font-family);
-  background-color: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
 }
 
 a {

@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-black);
+  background-color: #0C0C0C;
 }
 
 .panel-top {
@@ -24,11 +24,11 @@
 }
 
 .panel-bottom {
-  background-color: var(--color-black);
+  background-color: #0C0C0C;
 }
 
 .landing-text {
-  color: var(--color-white);
+  color: #FFFFFF;
   font-weight: 800;
   letter-spacing: -0.02em;
   text-align: center;
